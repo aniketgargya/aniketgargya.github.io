@@ -1,6 +1,6 @@
 import { getGravatarAvatar } from "gravatar-utils";
 import Head from "next/head";
-import { FadeIn, Icon } from "../components";
+import { FadeIn, Icons } from "../components";
 
 const Index = () => (
     <>
@@ -16,8 +16,9 @@ const Index = () => (
             <FadeIn delay={500}>
                 <h1>Hey, I'm Aniket!</h1>
             </FadeIn>
-            <div className="icons">
-                {[
+            <Icons
+                initialDelay={1000}
+                iconsData={[
                     {
                         fileName: "github",
                         iconName: "Github",
@@ -34,21 +35,20 @@ const Index = () => (
                         href: "https://www.linkedin.com/in/aniket-gargya-43277a141/"
                     },
                     {
+                        fileName: "hacker-rank",
+                        iconName: "Hacker Rank",
+                        href: "https://www.hackerrank.com/gargya_aniket"
+                    },
+                    {
                         fileName: "mac",
-                        iconName: "Mac",
+                        iconName: "Mac"
                     },
                     {
                         fileName: "android",
-                        iconName: "Android",
-                    },
-                    {
-                        fileName: "vscode",
-                        iconName: "VS Code",
-                    },
-                ].map((data, i) => (
-                    <Icon key={i} delay={1000 + i * 100} {...data} />
-                ))}
-            </div>
+                        iconName: "Android"
+                    }
+                ]}
+            />
         </header>
     </>
 );

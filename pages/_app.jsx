@@ -1,4 +1,5 @@
-import "../style.css";
+import "../styles/specific.css";
+import "../styles/reuseable.css";
 
 const MyApp = ({ Component, pageProps }) => <Component {...pageProps} />;
 

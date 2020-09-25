@@ -15,26 +15,6 @@ h1 {
     line-height: 1;
 }
 
-header {
-    min-height: 90vh;
-    width: 100vw;
-    padding: 50px 0;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-header > *:not(:last-child) {
-    margin-bottom: 40px;
-}
-
-.profile-image {
-    border-radius: 50%;
-    display: block;
-    margin: 0 auto;
-}
-
 .icons {
     display: grid;
     justify-items: center;
@@ -47,27 +27,11 @@ header > *:not(:last-child) {
 .icon .image {
     max-width: 50px;
     max-height: 50px;
-}
 
-header .icons {
-    max-width: 550px;
-    width: 80%;
-    margin: 0 auto;
 }
 
 @media only screen and (max-width: 700px) {
     h1 {
         font-size: 32px;
-    }
-
-    header .icons {
-        grid-template-columns: repeat(3, 50px);
-        width: auto;
-    }
-}
-
-@media only screen and (max-width: 500px) {
-    .profile-image {
-        width: 200px;
     }
 }
