@@ -10,14 +10,14 @@ const Index = () => (
         </Head>
 
         <header>
-            <FadeIn className="profile-image-wrapper">
+            <FadeIn delay={1000} className="profile-image-wrapper">
                 <img className="profile-image" src={getGravatarAvatar("gargya.aniket@gmail.com", { size: 250 })} alt="Aniket Gargya" />
             </FadeIn>
-            <FadeIn delay={500}>
+            <FadeIn delay={1500}>
                 <h1>Hey, I'm Aniket!</h1>
             </FadeIn>
             <Icons
-                initialDelay={1000}
+                initialDelay={2000}
                 iconsData={[
                     {
                         fileName: "github",
