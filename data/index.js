@@ -6,7 +6,7 @@ const aboutMeIcons = [
     },
     {
         fileName: "stackoverflow",
-        iconName: "Stack Overflow",
+        iconName: "Stack\u00A0Overflow",
         href: "https://stackoverflow.com/users/8403017/aniket-gargya"
     },
     {
@@ -16,7 +16,7 @@ const aboutMeIcons = [
     },
     {
         fileName: "hacker-rank",
-        iconName: "Hacker Rank",
+        iconName: "Hacker\u00A0Rank",
         href: "https://www.hackerrank.com/gargya_aniket"
     },
     {
@@ -143,11 +143,11 @@ const skills = [
         icons: [
             {
                 fileName: "android-studio",
-                iconName: "Android Studio"
+                iconName: "Android\u00A0Studio"
             },
             {
                 fileName: "flutter",
-                iconName: "flutter"
+                iconName: "Flutter"
             }
         ]
     },

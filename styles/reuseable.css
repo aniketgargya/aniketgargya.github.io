@@ -7,6 +7,10 @@
     font-family: "Lato", sans-serif;
 }
 
+a {
+    color: black;
+}
+
 h1 {
     color: #006299;
     font-size: 64px;
@@ -40,7 +44,7 @@ h2 {
     transition: transform .3s;
 }
 
-.icon .image:hover {
+.icon:hover .image {
     transform: translate(0, -5px);
 }
 
@@ -53,7 +57,7 @@ h2 {
     transition: opacity .3s;
 }
 
-.icon .image:hover ~ .caption{
+.icon:hover .caption {
     opacity: 1;
 }
 
