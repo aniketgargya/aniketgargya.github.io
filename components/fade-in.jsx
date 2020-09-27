@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 
 const FadeIn = ({ children, delay = 0, ...otherProps }) => {
     const spanRef = useRef();
@@ -25,6 +25,7 @@ const FadeIn = ({ children, delay = 0, ...otherProps }) => {
                     opacity: 0;
                     transform: translate(0, 10px);
                     transition: opacity 1s, transform 1s;
+                    display: block;
                 }
 
                 span.visible {

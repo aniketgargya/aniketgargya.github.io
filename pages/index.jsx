@@ -1,6 +1,7 @@
 import { getGravatarAvatar } from "gravatar-utils";
 import Head from "next/head";
 import { FadeIn, Icons } from "../components";
+import { aboutMeIcons, skills } from "../data";
 
 const Index = () => (
     <>
@@ -18,38 +19,25 @@ const Index = () => (
             </FadeIn>
             <Icons
                 initialDelay={2000}
-                iconsData={[
-                    {
-                        fileName: "github",
-                        iconName: "Github",
-                        href: "http://github.com/aniketgargya"
-                    },
-                    {
-                        fileName: "stackoverflow",
-                        iconName: "Stack Overflow",
-                        href: "https://stackoverflow.com/users/8403017/aniket-gargya"
-                    },
-                    {
-                        fileName: "linkedin",
-                        iconName: "Linkedin",
-                        href: "https://www.linkedin.com/in/aniket-gargya-43277a141/"
-                    },
-                    {
-                        fileName: "hacker-rank",
-                        iconName: "Hacker Rank",
-                        href: "https://www.hackerrank.com/gargya_aniket"
-                    },
-                    {
-                        fileName: "mac",
-                        iconName: "Mac"
-                    },
-                    {
-                        fileName: "android",
-                        iconName: "Android"
-                    }
-                ]}
+                iconsData={aboutMeIcons}
             />
         </header>
+        <section className="my-skills">
+            <FadeIn>
+                <h1>My Skills</h1>
+            </FadeIn>
+            {skills.map(({ category, icons }, i) => (
+                <div key={i} className="skill">
+                    <FadeIn>
+                        <h2>{category}</h2>
+                    </FadeIn>
+                    <Icons iconsData={icons} />
+                </div>
+            ))}
+        </section>
+        <footer>
+
+        </footer>
     </>
 );
 

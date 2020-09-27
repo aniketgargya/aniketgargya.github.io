@@ -1,38 +1,68 @@
-header {
-    min-height: 90vh;
-    width: 100vw;
-    padding: 50px 0;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    line-height: 1.6;
+    font-family: "Lato", sans-serif;
 }
 
-header > *:not(:last-child) {
-    margin-bottom: 40px;
+h1 {
+    color: #006299;
+    font-size: 64px;
+    font-weight: 200;
+    text-align: center;
 }
 
-.profile-image {
-    border-radius: 50%;
-    display: block;
-    margin: 0 auto;
+h2 {
+    color: #006299;
+    font-size: 37px;
+    font-weight: 200;
 }
 
-header .icons {
-    max-width: 550px;
-    width: 80%;
-    margin: 0 auto;
+.icons {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+    column-gap: 80px;
+    row-gap: 20px;
+}
+
+.icon {
+    position: relative;
+}
+
+.icon .image {
+    max-width: 50px;
+    max-height: 50px;
+    cursor: pointer;
+    transition: transform .3s;
+}
+
+.icon .image:hover {
+    transform: translate(0, -5px);
+}
+
+.icon .caption {
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    opacity: 0;
+    transition: opacity .3s;
+}
+
+.icon .image:hover ~ .caption{
+    opacity: 1;
 }
 
 @media only screen and (max-width: 700px) {
-    header .icons {
-        grid-template-columns: repeat(3, 50px);
-        width: auto;
+    h1 {
+        font-size: 32px;
     }
-}
 
-@media only screen and (max-width: 500px) {
-    .profile-image {
-        width: 200px;
+    h2 {
+        font-size: 26px;
     }
 }
