@@ -114,10 +114,6 @@ const skills = [
             {
                 fileName: "mongo",
                 iconName: "MongoDB"
-            },
-            {
-                fileName: "mysql",
-                iconName: "MySQL"
             }
         ]
     },
