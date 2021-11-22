@@ -15,9 +15,9 @@ const aboutMeIcons = [
         href: "https://www.linkedin.com/in/aniket-gargya-43277a141/"
     },
     {
-        fileName: "hacker-rank",
-        iconName: "Hacker\u00A0Rank",
-        href: "https://www.hackerrank.com/gargya_aniket"
+        fileName: "leetcode",
+        iconName: "Leetcode",
+        href: "https://leetcode.com/gargyaaniket/"
     },
     {
         fileName: "mac",
