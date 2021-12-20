@@ -34,6 +34,10 @@ const skills = [
         category: "Languages",
         icons: [
             {
+                fileName: "c++",
+                iconName: "C++"
+            },
+            {
                 fileName: "javascript",
                 iconName: "Javascript"
             },
@@ -44,10 +48,6 @@ const skills = [
             {
                 fileName: "java",
                 iconName: "Java"
-            },
-            {
-                fileName: "c++",
-                iconName: "C++"
             }
         ]
     },
