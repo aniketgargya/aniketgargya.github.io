@@ -7,7 +7,7 @@ const FadeIn = ({ children, delay = 0, ...otherProps }) => {
         const observer = new IntersectionObserver(entries => {
             if (entries[0].isIntersecting) {
                 observer.unobserve(spanRef.current);
-                setTimeout(() =>spanRef.current.classList.add("visible"), delay);
+                setTimeout(() => spanRef.current.classList.add("visible"), delay);
             }
         }, {
             rootMargin: "0px 0px -25% 0px"
