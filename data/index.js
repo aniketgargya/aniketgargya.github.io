@@ -5,9 +5,9 @@ const aboutMeIcons = [
         href: "http://github.com/aniketgargya"
     },
     {
-        fileName: "stackoverflow",
-        iconName: "Stack\u00A0Overflow",
-        href: "https://stackoverflow.com/users/8403017/aniket-gargya"
+        fileName: "email",
+        iconName: "Email",
+        href: "mailto:gargya.aniket@gmail.com"
     },
     {
         fileName: "linkedin",
