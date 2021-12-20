@@ -81,10 +81,6 @@ const skills = [
             {
                 fileName: "sass",
                 iconName: "Sass"
-            },
-            {
-                fileName: "jquery",
-                iconName: "JQuery"
             }
         ]
     },
@@ -102,14 +98,6 @@ const skills = [
             {
                 fileName: "graphql",
                 iconName: "GraphQL"
-            },
-            {
-                fileName: "apollo",
-                iconName: "Apollo"
-            },
-            {
-                fileName: "nginx",
-                iconName: "NGINX"
             },
             {
                 fileName: "mongo",
@@ -134,36 +122,6 @@ const skills = [
             }
         ]
     },
-    {
-        category: "Other UI",
-        icons: [
-            {
-                fileName: "android-studio",
-                iconName: "Android\u00A0Studio"
-            },
-            {
-                fileName: "flutter",
-                iconName: "Flutter"
-            }
-        ]
-    },
-    {
-        category: "Data Science",
-        icons: [
-            {
-                fileName: "numpy",
-                iconName: "Numpy"
-            },
-            {
-                fileName: "pandas",
-                iconName: "Pandas"
-            },
-            {
-                fileName: "matplotlib",
-                iconName: "Matplotlib"
-            }
-        ]
-    }
 ];
 
 export { aboutMeIcons, skills };
