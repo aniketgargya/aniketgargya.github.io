@@ -27,7 +27,6 @@ header .icons {
 
 .my-skills {
     background-color: rgba(204, 237, 255, 0.317);
-    padding: 80px 10%;
 }
 
 .my-skills .skill:not(:last-child) {
@@ -38,9 +37,25 @@ header .icons {
     margin-bottom: 20px;
 }
 
-footer {
-    min-height: 400px;
-    background-color: rgb(0, 23, 52);
+.about-me {
+    min-height: 800px;
+    background-color: white;
+}
+
+.about-me h1 {
+    margin-bottom: 50px;
+}
+
+.about-me .content {
+    display: flex;
+}
+
+.about-me ul {
+    margin-right: 5%;
+}
+
+.about-me img {
+    width: 45%;
 }
 
 @media only screen and (max-width: 900px) {
@@ -52,10 +67,32 @@ footer {
     .my-skills {
         padding: 40px 40px;
     }
+
+    .about-me h1 {
+        margin-bottom: 20px;
+    }
+
+    .about-me .content {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .about-me ul {
+        margin-right: 0;
+    }
+
+    .about-me img {
+        width: 75%;
+        margin-bottom: 20px;
+    }
 }
 
 @media only screen and (max-width: 500px) {
     .profile-image {
         width: 200px;
+    }
+
+    .about-me img {
+        width: 100%;
     }
 }
