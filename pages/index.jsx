@@ -41,7 +41,7 @@ const Index = () => (
                 <ul>
                     <li>I'm currently a freshman studying computer science at UIUC</li>
                     <li>I'll be at Facebook this summer as a Software Engineering Intern</li>
-                    <li>One of my favorite projects is <a href="https://github.com/aniketgargya/zoom-automater">Zoom Automator</a>, a Chrome extension to allow you to sleep during classes or meetings</li>
+                    <li>One of my favorite projects is <a href="https://github.com/aniketgargya/zoom-automator">Zoom Automator</a>, a Chrome extension to allow you to sleep during classes or meetings</li>
                 </ul>
                 <img src="/images/oculus.jpg" alt="Me at Costco!" />
             </div>
