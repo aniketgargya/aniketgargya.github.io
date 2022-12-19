@@ -22,7 +22,7 @@ const Index = () => (
                 iconsData={aboutMeIcons}
             />
         </header>
-        <section className="my-skills">
+        {/* <section className="my-skills">
             <FadeIn>
                 <h1>My Skills</h1>
             </FadeIn>
@@ -45,7 +45,7 @@ const Index = () => (
                 </ul>
                 <img src="/images/oculus.jpg" alt="Me at Costco!" />
             </div>
-        </section>
+        </section> */}
     </>
 );
 
